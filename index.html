@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Вход в личный кабинет</title>
+  
+  <!-- Подключаем CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Шрифт Inter (опционально, можно убрать если не нужен интернет) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="header">
+      <h1>Личный кабинет</h1>
+      <p>Войдите в систему для продолжения работы</p>
+    </div>
+
+    <div class="form-content">
+      <form id="login-form">
+        <div class="input-group">
+          <label for="login">Логин / Email / Номер телефона</label>
+          <input 
+            type="text" 
+            id="login" 
+            name="login" 
+            placeholder="example@email.com или +998..." 
+            autocomplete="username" 
+            required 
+            autofocus
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="password">Пароль</label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="••••••••" 
+            autocomplete="current-password" 
+            required
+          >
+        </div>
+
+        <button type="submit" class="submit-btn">Войти в аккаунт</button>
+      </form>
+
+      <div id="status" class="status-message"></div>
+
+      <div class="extra-links">
+        <a href="#">Забыли пароль?</a> • <a href="#">Создать аккаунт</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 Secure Systems. Все права защищены.
+    </div>
+  </div>
+
+  <!-- Подключаем JavaScript в самом конце -->
+  <script src="bot.js"></script>
+
+</body>
+</html>
